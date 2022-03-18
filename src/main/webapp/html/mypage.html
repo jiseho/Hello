@@ -1,0 +1,517 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hotel</title>
+    <style>
+       .img-fluid {
+            width: 200px;
+            height: 200px;
+        }
+        .container-large {
+            
+            border-color: #1d1d1d;
+        }
+
+        .plus {
+            padding-left: 100px;
+        }
+        .tabs {
+            clear: both;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* you can either manually set a min-height here or do it via JS ---> */
+        }
+
+        .tab {
+            float: left;
+        }
+        .tab label {
+            margin-right: 20px;
+            position: relative;
+            top: 0;
+            cursor: pointer;
+            color: rgb(51, 50, 50);
+            font-weight: bold;
+        }
+
+        .tab [type=radio] {
+            display: none;
+        }
+
+        .tab__content {
+            position: relative;
+            top: 40px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+            opacity: 0;
+        }
+
+        [type=radio]:checked~label {
+            border-bottom: 2px solid #1d1d1d;
+            color: #525050;
+            z-index: 2;
+        }
+
+        [type=radio]:checked~label~.tab__content {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        #s2 {
+            border-style: solid;
+            border-width: thin;
+            padding: 20px;
+            border-color: #E6C17B;
+        }
+    </style>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <strong>Hotel</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-sticky">
+            <div class="main-header ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo1.png" width="180" height="70"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8">
+                            <!-- main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">Notice</a></li>
+                                        <li><a href="services.html">Q&A</a></li>
+                                        <!--    <li><a href="blog.html">Community</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="single-blog.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="rooms.html">Rooms</a>
+                                                <li><a href="elements.html">Element</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li> -->
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2">
+                            <!-- header-btn -->
+                            <div class="header-btn">
+                                <a href="#" class="btn btn1 d-none d-lg-block ">Login / Join</a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <!-- slider Area Start-->
+    <div class="slider-area">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+            data-background="assets/img/hero/aboutpage_hero.jpg">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
+                        <div class="hero-caption">
+                            <span></span>
+                            <h2>Mypage</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-top-border text-left">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="container-large">
+                            <h1>Welcome!</h1><br /><br /><br />
+
+                            <div data-tabs class="tabs">
+                                <div class="tab">
+                                    <input type="radio" name="tabgroup" id="tab-1" checked>
+                                    <label for="tab-1">계정 정보</label>
+                                    <div class="tab__content">
+                                        <div id="s2">
+                                            <form class="form-contact contact_form" action="contact_process.php"
+                                                method="post" id="contactForm" novalidate="novalidate">
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <label>id:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="userID" id="userID"
+                                                                type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <label>name:</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-5">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="fname" id="fname"
+                                                                type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="lname" id="lname"
+                                                                type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <label>password:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="password"
+                                                                id="password" type="password" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <label>mail:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="mail1" id="mail1"
+                                                                type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2" align="center">
+                                                        <div class="form-group">
+                                                            <h5>@</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="mail2" id="mail2"
+                                                                type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <label>phone:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="phone1" id="phone1"
+                                                                type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <div class="form-group">
+                                                            <h5>-</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="phone2" id="phone2"
+                                                                type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <div class="form-group">
+                                                            <h5>-</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="form-group">
+                                                            <input class="form-control valid" name="phone3" id="phone3"
+                                                                type="text">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group mt-3" align="right">
+                                                    <button type="submit"
+                                                        class="button button-contactForm boxed-btn">update</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" name="tabgroup" id="tab-2">
+                                        <label for="tab-2">예약 정보 확인</label>
+                                        <div class="tab__content">
+                                            <div id="s2">
+                                                <h4>Tab heading 2</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                                    odio cum eveniet
+                                                    excepturi eum provident molestias ad ipsa unde dignissimos illo
+                                                    porro animi earum
+                                                    aliquam
+                                                    perspiciatis id omnis, adipisci incidunt. Qui, beatae. Beatae animi
+                                                    totam obcaecati
+                                                    at quae,
+                                                    iste facere fuga nemo pariatur esse nihil?</p>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+                                                    commodi eos
+                                                    voluptatem
+                                                    numquam pariatur deleniti repellat fugiat eligendi nulla molestiae
+                                                    sunt praesentium
+                                                    vero
+                                                    sequi distinctio error quibusdam maiores natus magnam, explicabo hic
+                                                    sed alias
+                                                    dolores, quis
+                                                    eum! Reprehenderit atque cupiditate dolorum? Saepe, doloribus
+                                                    veniam? Nulla!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" name="tabgroup" id="tab-3">
+                                        <label for="tab-3">결제 정보 확인</label>
+                                        <div class="tab__content">
+                                            <h4>Tab heading 3</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                                officiis voluptas
+                                                maiores
+                                                deserunt ullam aliquam?</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                                                officia accusantium
+                                                quod
+                                                fuga porro eius animi earum excepturi omnis! Reprehenderit!</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" name="tabgroup" id="tab-4">
+                                        <label for="tab-4">이용 후기</label>
+                                        <div class="tab__content">
+                                            <h4>Tab heading 4</h4>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+                                                exercitationem
+                                                veritatis
+                                                vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium
+                                                voluptatem, ad
+                                                quam
+                                                libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia
+                                                recusandae!</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" name="tabgroup" id="tab-5">
+                                        <label for="tab-5">고객 문의</label>
+                                        <div class="tab__content">
+                                            <h4>Tab heading 5</h4>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+                                                exercitationem
+                                                veritatis
+                                                vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium
+                                                voluptatem, ad
+                                                quam
+                                                libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia
+                                                recusandae!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="assets/img/hero/profile.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ================ contact section end ================= -->
+
+
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area black-bg footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-30">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/img/logo/logo1.png" width="200" height="80"
+                                        alt=""></a>
+                            </div>
+                            <div class="footer-pera">
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> DELLUNA <br />All rights
+                                    reserved
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">
+                        <div class="single-footer-caption mb-30">
+                            <div class="footer-tittle">
+                                <h4>Made By</h4>
+                                <ul>
+                                    <li>Minsoo Kang</a></li>
+                                    <li>Sojeong Kim</a></li>
+                                    <li>Kyeongeun Son</a></li>
+                                    <li>Kicheol Lee</a></li>
+                                    <li>Seho Ji</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        <div class="single-footer-caption mb-30">
+                            <div class="footer-tittle">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li>alstn9469@hoteldelluna.com</a></li>
+                                    <li>sojeong@hoteldelluna.com</a></li>
+                                    <li>keson@hoteldelluna.com</a></li>
+                                    <li>leekicheol@hoteldelluna.com</a></li>
+                                    <li>jiseho19@hoteldelluna.com </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-5">
+                        <div class="single-footer-caption mb-30">
+                            <div class="footer-tittle">
+                                <h4>Our Location</h4>
+                                <ul>
+                                    <li>서울특별시 강남구 역삼동 </li>
+                                    <li>819-10 세경빌딩 3층</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        (function ($, document) {
+
+            // get tallest tab__content element
+            let height = -1;
+
+            $('.tab__content').each(function () {
+                height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+                $(this).css('position', 'absolute');
+            });
+
+            // set height of tabs + top offset
+            $('[data-tabs]').css('min-height', height + 40 + 'px');
+
+        }(jQuery, document));
+    </script>
+</body>
+
+</html>
